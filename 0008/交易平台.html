@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://trade.test.opengpo.com/#/Order/PurchasePlan -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>交易平台</title><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><link rel="shortcut icon" href="http://trade.test.opengpo.com/qywico.png" type="image/x-icon"><meta content="always" name="referrer"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="format-detection" content="telephone=no"><meta name="full-screen" content="yes"><meta name="x5-page-mode" content="app"><meta content="yes"><meta content="black"><meta content="telephone=no,email=no"><script src="./交易平台_files/cityjson"></script><style>#spinner {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      margin-top: -30px;
+      margin-left: -30px;
+      z-index: 99999;
+      width: 66px;
+      height: 60px;
+      text-align: center;
+      font-size: 10px;
+    }
+
+    #spinner>div {
+      background-color: #0868cf;
+      height: 100%;
+      width: 6px;
+      display: inline-block;
+      margin: 0 2px;
+
+      -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+      animation: stretchdelay 1.2s infinite ease-in-out;
+    }
+
+    #spinner .rect2 {
+      -webkit-animation-delay: -1.1s;
+      animation-delay: -1.1s;
+    }
+
+    #spinner .rect3 {
+      -webkit-animation-delay: -1.0s;
+      animation-delay: -1.0s;
+    }
+
+    #spinner .rect4 {
+      -webkit-animation-delay: -0.9s;
+      animation-delay: -0.9s;
+    }
+
+    #spinner .rect5 {
+      -webkit-animation-delay: -0.8s;
+      animation-delay: -0.8s;
+    }
+
+    @-webkit-keyframes stretchdelay {
+      0%,
+      40%,
+      100% {
+        -webkit-transform: scaleY(0.4)
+      }
+      20% {
+        -webkit-transform: scaleY(1.0)
+      }
+    }
+
+    @keyframes stretchdelay {
+      0%,
+      40%,
+      100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+      }
+      20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #app-header {
+      background-color: #0868cf;
+      height: 50px;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+
+    .app-header-left {
+      float: left;
+      background-color: #0151a6;
+      height: 50px;
+      width: 220px;
+      text-align: center;
+    }
+
+    .app-header-left-logo {
+      width: 70px;
+      height: 38px;
+      margin-top: 6px;
+      margin-left: 14px;
+      float: left;
+    }
+
+    .app-header-left-span {
+      line-height: 50px;
+      margin-right: 20px;
+      color: #fff;
+    }
+
+    #app-body {
+      background-color: #f0f5f8;
+      width: 213.5px;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: -2;
+    }
+
+    #app-body-line {
+      background-color: #f9f9f9;
+      width: 220px;
+      height: 100%;
+      position: fixed;
+      border-right: 1px solid #eee;
+      left: 0;
+      top: 0;
+      z-index: -3;
+    }</style><link rel="shortcut icon" href="http://trade.test.opengpo.com/qywico.png"><link href="./交易平台_files/app.6e0c138c7e8cc2c10893db3f691c6779.css" rel="stylesheet"><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/0.120bda3fbb46e18af939.js.下载"></script><style type="text/css">
+.app {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .2s ease;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+.disabled .el-input__inner {
+  background: #F9FAFC;
+}
+.disabled .el-textarea__inner {
+  background: #F9FAFC;
+}
+.disabled .el-textarea__inner {
+  background: #F9FAFC;
+}
+</style><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/16.aae8b785160205351f5c.js.下载"></script><style type="text/css">
+.content-right-main[data-v-88564544] {
+  float: right;
+  margin-right: 20px;
+  margin-top: -40px;
+  font-size: 12px;
+}
+.global-select[data-v-88564544] {
+  width: 200px;
+}
+</style><style type="text/css">
+.index-box[data-v-949de9da] {
+  min-width: 1000px;
+}
+.head[data-v-949de9da] {
+  width: 100%;
+}
+.head_box[data-v-949de9da] {
+  border: 1px solid #EEEEEE;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.head_left[data-v-949de9da] {
+  float: left;
+  width: 110px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #0868cf;
+}
+.head_right[data-v-949de9da] {
+  font-size: 14px;
+  float: left;
+  color: black;
+  padding-top: -5px;
+}
+.head[data-v-949de9da]::after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.middle_one[data-v-949de9da] {
+  width: 100%;
+}
+.middle_one_box[data-v-949de9da] {
+  border: 1px solid #EEEEEE;
+  padding: 8px 20px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  height: 116px;
+}
+.middle[data-v-949de9da] {
+  margin-top: 10px;
+  width: 100%;
+}
+.middle-content-money[data-v-949de9da] {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+.middle-content-box[data-v-949de9da]::after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.typedate[data-v-949de9da] {
+  cursor: pointer;
+  margin-left: 5px;
+}
+.typedate--avtive[data-v-949de9da] {
+  border-radius: 50%;
+  background: #196DBD;
+  padding: 1px 3px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+}
+.title-box[data-v-949de9da] {
+  position: relative;
+  height: 38px;
+  background-color: #f0f5f8;
+}
+.title-left[data-v-949de9da] {
+  position: absolute;
+  left: 10px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #0868cf;
+}
+.title-left i[data-v-949de9da] {
+  font-size: 18px;
+}
+.title-right[data-v-949de9da] {
+  position: absolute;
+  right: 10px;
+  line-height: 38px;
+  font-size: 12px;
+}
+.title-right i[data-v-949de9da] {
+  font-size: 14px;
+}
+.content-box[data-v-949de9da] {
+  height: 230px;
+  padding: 10px;
+  text-align: center;
+}
+.content-box[data-v-949de9da]::after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.circle-box[data-v-949de9da] {
+  padding: 0 15px;
+}
+.circle[data-v-949de9da] {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  margin: 0 auto;
+}
+.circle i[data-v-949de9da] {
+  font-size: 22px;
+}
+.circle-num[data-v-949de9da] {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 8px;
+  color: black;
+  cursor: pointer;
+  /*font-size: 22px;*/
+}
+.circle-num[data-v-949de9da]:hover {
+  font-size: 20px;
+  color: #0868cf;
+}
+.circle-nums[data-v-949de9da] {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 8px;
+  color: black;
+}
+.circle-title[data-v-949de9da] {
+  font-size: 12px;
+}
+.circle-m[data-v-949de9da] {
+  background-color: #3a74f9;
+}
+.circle-s[data-v-949de9da] {
+  background-color: #1DA0FC;
+}
+.circle-a[data-v-949de9da] {
+  background-color: #3398DB;
+}
+.circle-g[data-v-949de9da] {
+  background-color: #0868cf;
+}
+.circle-d[data-v-949de9da] {
+  background-color: #3B72FB;
+}
+.circle-xy[data-v-949de9da] {
+  background-color: #13CE64;
+}
+.circle-zy[data-v-949de9da] {
+  background-color: #13c7ce;
+}
+.circle-q[data-v-949de9da] {
+  background-color: #6359F4;
+}
+.work-box[data-v-949de9da]:nth-child(3) {
+  margin-right: 0%;
+}
+.work-box[data-v-949de9da] {
+  float: left;
+  margin-right: 0.8%;
+  /*width: 32.8%;*/
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  height: 100%;
+}
+.work-content[data-v-949de9da] {
+  position: relative;
+  height: 33px;
+  line-height: 33px;
+}
+.work-name[data-v-949de9da] {
+  position: absolute;
+  left: 10px;
+  font-size: 14px;
+}
+.work-num[data-v-949de9da] {
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+}
+.work-num-color[data-v-949de9da] {
+  color: #0868cf;
+}
+.member[data-v-949de9da] {
+  margin-top: 10px;
+}
+.footer-content-box[data-v-949de9da] {
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+}
+.middle_one .el-row[data-v-949de9da] {
+  text-align: center;
+  border-radius: 3px;
+}
+.middle_one .el-col[data-v-949de9da] {
+  text-align: center;
+}
+.middle_one .el-col[data-v-949de9da]:nth-child(6) {
+  border-right: none;
+}
+.footer_box_one .el-progress__text[data-v-949de9da] {
+  float: right;
+  font-size: 12px;
+}
+</style><style type="text/css">
+.list-complete-item {
+  transition: all 1s;
+  display: inline-block;
+  margin-right: 15px;
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+}
+.list-complete-enter {
+  opacity: 0;
+  transition: all 2s;
+  padding-top: 10px;
+}
+.list-complete-leave-to {
+  opacity: 0;
+  transition: all 2s;
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+}
+.list-complete-enter-active,
+.list-complete-leave-active {
+  transition: all 1s;
+}
+.list-complete-enter-active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.list-complete-leave-active {
+  position: absolute;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+</style><style type="text/css">@keyframes resizeanim { from { opacity: 0; } to { opacity: 0; } } 
+      .resize-triggers { animation: 1ms resizeanim; visibility: hidden; opacity: 0; }
+      .resize-triggers, .resize-triggers > div, .contract-trigger:before { content: " "; display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; z-index: -1 }
+      .resize-triggers > div { background: #eee; overflow: auto; }
+      .contract-trigger:before { width: 200%; height: 200%; }</style><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/1.c483f3026489fa7d8fdc.js.下载"></script><style type="text/css">
+.content[data-v-71b46613] {
+  border: 1px solid rgb(223, 228, 236);
+  padding: 0 0.2rem 0 0.2rem;
+}
+.find[data-v-71b46613] {
+  position: relative;
+  z-index: 10;
+  margin-bottom: .2rem;
+}
+.find[data-v-71b46613]:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.btnS[data-v-71b46613] {
+  margin-top: 7px;
+  position: absolute;
+  right: 15px;
+  overflow: hidden;
+}
+.searchBtn[data-v-71b46613] {
+  float: right;
+  margin-left: 0.08rem;
+  padding: 7px 9px;
+  font-size: 19px;
+}
+.searchContentBox[data-v-71b46613] {
+  padding-right: 1.5rem;
+}
+.el-row[data-v-71b46613] {
+  padding-bottom: 0.1rem;
+}
+.el-col[data-v-71b46613] {
+  margin-top: 0.1rem;
+}
+.searchct[data-v-71b46613] {
+  position: relative;
+}
+.searchLabel[data-v-71b46613] {
+  position: absolute;
+  text-align: right;
+  width: 80px;
+  line-height: 30px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.searchInput[data-v-71b46613] {
+  position: relative;
+  width: 100%;
+  padding-left: 90px;
+  box-sizing: border-box;
+}
+.citySelect[data-v-71b46613] {
+  width: 100%;
+}
+.open_more[data-v-71b46613] {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-top: none;
+  box-sizing: border-box;
+}
+.open_more_cont[data-v-71b46613] {
+  width: 60px;
+  height: 6px;
+  line-height: 6px;
+  background-color: #bbb;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -30px;
+  text-align: center;
+}
+.open_more_cont[data-v-71b46613]:hover {
+  background-color: #333;
+}
+.open_more i[data-v-71b46613] {
+  color: #fff;
+  display: block;
+  font-size: 8px;
+}
+.left .el-tooltip__popper[data-v-71b46613],
+.right .el-tooltip__popper[data-v-71b46613] {
+  padding: 8px 10px;
+}
+.el-select[data-v-71b46613] {
+  width: 20px;
+}
+.el-select-dropdown__item[data-v-71b46613] {
+  padding: 8px 15px;
+}
+.more_arrow_down[data-v-71b46613] {
+  background-image: url(/static/img/more_arrow_down.593eb42.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: block;
+  width: 8px;
+  height: 6px;
+  margin: 0 auto;
+  transition: all .4s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.more_arrow_down.up[data-v-71b46613] {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.groupstyle[data-v-71b46613] {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.dateDuan[data-v-71b46613] {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+.datestart[data-v-71b46613] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48%;
+}
+.dateend[data-v-71b46613] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48%;
+}
+.datemiddle[data-v-71b46613] {
+  display: inline-block;
+}
+</style><style type="text/css">
+.dateSelect .el-date-editor.el-input {
+  width: 100%;
+}
+.dateDuan .el-date-editor.el-input {
+  /* width: 40%; */
+}
+.find .el-select.searchOp {
+  position: absolute;
+  z-index: 10;
+  background-color: #f0f5f8;
+  border: 1px solid rgb(191, 200, 217);
+  box-sizing: border-box;
+  height: 36px;
+  border-radius: 2px 0 0 2px;
+}
+.find .el-select.searchSelect {
+  width: 100%;
+}
+.find .el-select.searchSelect .el-input {
+  width: 100%;
+}
+.find .el-select.searchSelect .el-input .el-input__inner {
+  width: 100%;
+  opacity: 1;
+}
+.find .el-select .el-input .el-input__inner {
+  /* padding: 5px;
+    width: 20px;
+    opacity: 0; */
+}
+.find .el-select .el-input .el-input__icon {
+  /* width: 20px !important; */
+}
+.find .searchInput .hasOp .el-input .el-input__inner {
+  /* padding-left: 25px; */
+}
+.find .searchInput .hasOp .el-select__tags {
+  /* padding-left: 20px; */
+}
+.find .hasOp .citySelect .el-input .el-input__inner {
+  /* padding-left: 25px; */
+}
+.find .hasOp .citySelect .el-cascader__label {
+  /* padding-left: 25px; */
+}
+.find .el-icon-white:before {
+  content: "";
+}
+.find .el-icon-close:hover {
+  cursor: pointer;
+  color: #8391a5;
+}
+.find .searchselect-more {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+.find .searchselect-more .el-select__tags {
+  max-width: 10000px!important;
+  width: 10000px;
+}
+.find .searchselect-more .el-select__tags .el-tag {
+  display: none;
+}
+.find .searchselect-more .searchselect-more-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.find .searchselect-more .searchselect-more-select {
+  display: block;
+  width: 100%;
+  height: 30px;
+  opacity: 0;
+  overflow: hidden;
+}
+</style><style type="text/css">
+.datepicker {
+  position: relative;
+}
+.datepicker:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 34px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: url('data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiPjxwYXRoIGQ9Ik01NjQgMTgwLjJINDQ4Yy04LjMgMC0xNS02LjctMTUtMTVzNi43LTE1IDE1LTE1aDExNmM4LjIgMCAxNSA2LjcgMTUgMTVzLTYuOCAxNS0xNSAxNXoiIGZpbGw9IiM5ODk4OTgiLz48cGF0aCBkPSJNOTQ1IDk1Mi4ySDgxLjJjLTguMiAwLTE1LTYuNy0xNS0xNVYxNjIuOGMwLTguMyA2LjgtMTUgMTUtMTVIMjk0YzguMiAwIDE1IDYuNyAxNSAxNXMtNi44IDE1LTE1IDE1SDk2LjJ2NzQ0LjRIOTMwVjE3Ny44SDcxMy42Yy04LjMgMC0xNS02LjctMTUtMTVzNi43LTE1IDE1LTE1SDk0NWM4LjIgMCAxNSA2LjcgMTUgMTV2Nzc0LjRjMCA4LjMtNi44IDE1LTE1IDE1eiIgZmlsbD0iIzk4OTg5OCIvPjxwYXRoIGQ9Ik0zMzMuMyA1NTFIMjE2Yy04LjIgMC0xNS02LjgtMTUtMTVzNi44LTE1IDE1LTE1aDExNy4zYzguMyAwIDE1IDYuNiAxNSAxNXMtNi43IDE1LTE1IDE1em0yMzAuMyAwSDQ0Ni4zYy04LjMgMC0xNS02LjgtMTUtMTVzNi43LTE1IDE1LTE1aDExNy4zYzguMiAwIDE1IDYuNiAxNSAxNXMtNi44IDE1LTE1IDE1em0yMzAuMiAwSDY3Ni42Yy04LjMgMC0xNS02LjgtMTUtMTVzNi43LTE1IDE1LTE1aDExNy4yYzguMyAwIDE1IDYuNiAxNSAxNXMtNi43IDE1LTE1IDE1ek0zMzMuMyA3NDBIMjE2Yy04LjIgMC0xNS02LjgtMTUtMTVzNi44LTE1IDE1LTE1aDExNy4zYzguMyAwIDE1IDYuNiAxNSAxNXMtNi43IDE1LTE1IDE1em0yMzAuMyAwSDQ0Ni4zYy04LjMgMC0xNS02LjgtMTUtMTVzNi43LTE1IDE1LTE1aDExNy4zYzguMiAwIDE1IDYuNiAxNSAxNXMtNi44IDE1LTE1IDE1em0yMzAuMiAwSDY3Ni42Yy04LjMgMC0xNS02LjgtMTUtMTVzNi43LTE1IDE1LTE1aDExNy4yYzguMyAwIDE1IDYuNiAxNSAxNXMtNi43IDE1LTE1IDE1ek0zNzAuOCAyNTguNmMtOC4zIDAtMTUtNi43LTE1LTE1Vjg2LjhjMC04LjIgNi43LTE1IDE1LTE1czE1IDYuOCAxNSAxNXYxNTYuOGMwIDguMy02LjcgMTUtMTUgMTV6bTI3MC4yIDBjLTguMyAwLTE1LTYuNy0xNS0xNVY4Ni44YzAtOC4yIDYuNy0xNSAxNS0xNXMxNSA2LjggMTUgMTV2MTU2LjhjMCA4LjMtNi43IDE1LTE1IDE1ek05NDUgMzcyLjJIODEuMmMtOC4yIDAtMTUtNi43LTE1LTE1czYuOC0xNSAxNS0xNUg5NDVjOC4yIDAgMTUgNi43IDE1IDE1cy02LjggMTUtMTUgMTV6IiBmaWxsPSIjOTg5ODk4Ii8+PC9zdmc+') no-repeat 50% 50%;
+}
+.datepicker-close {
+  display: none;
+  position: absolute;
+  width: 34px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.datepicker-close:before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  text-align: center;
+  background: #ccc;
+  color: #fff;
+  border-radius: 50%;
+  background:#ccc url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3IDciIHdpZHRoPSI3IiBoZWlnaHQ9IjciPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik01LjU4LDVsMi44LTIuODFBLjQxLjQxLDAsMSwwLDcuOCwxLjZMNSw0LjQxLDIuMiwxLjZhLjQxLjQxLDAsMCwwLS41OC41OGgwTDQuNDIsNSwxLjYyLDcuOGEuNDEuNDEsMCwwLDAsLjU4LjU4TDUsNS41OCw3LjgsOC4zOWEuNDEuNDEsMCwwLDAsLjU4LS41OGgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEuNSAtMS40OCkiIHN0eWxlPSJmaWxsOiNmZmYiLz48L3N2Zz4NCg==') no-repeat 50% 50%;
+}
+.datepicker__clearable:hover:before {
+  display: none;
+}
+.datepicker__clearable:hover .datepicker-close{
+  display: block;
+}
+.datepicker-close:hover:before{
+  background-color: #afafaf;
+}
+.datepicker>input:hover {
+  border: 1px solid rgb(93, 131, 202);
+}
+.datepicker>input {
+  color: #666;
+  transition: all 200ms ease;
+  height: 34px;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0 34px 0 12px;
+  font-size: 12px;
+  width: 100%;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  border-radius: 3px;
+  border: 1px solid rgb(191, 200, 217);
+}
+.datepicker>input.focus {
+  box-shadow: 0 0 5px rgba(59, 180, 242, .3);
+}
+.datepicker>input:disabled {
+  cursor: not-allowed;
+  background-color: #ebebe4;
+  border-color: #e5e5e5;
+  box-shadow: none;
+}
+.picker-left .datepicker-popup{
+  right: -166px;
+}
+.datepicker-popup {
+  position: absolute;
+  transition: all 200ms ease;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  font-size: 12px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 1px 6px rgba(99, 99, 99, 0.2);
+  margin-top: 2px;
+  outline: 0;
+  padding: 5px;
+  overflow: hidden;
+  z-index: 999
+}
+.datepicker-inline{
+  position: relative;
+  margin-top: 0;
+}
+.datepicker-range {
+  min-width: 100px;
+  font-size: 10px;
+}
+.datepicker-range .datepicker-popup{
+  width: 520px;
+}
+.datepicker-bottom {
+  float: left;
+  width: 100%;
+  text-align: right;
+}
+.datepicker-btn {
+  padding: 5px 10px;
+  background: #1284e7;
+  color: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  cursor: pointer;
+}
+.datepicker-sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 96px;
+  border-right: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  padding-top: 6px;
+  background-color: rgb(250, 252, 254);
+}
+.datepicker-sidebar-shortcut {
+  display: block;
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  line-height: 28px;
+  font-size: 12px;
+  color: rgb(72, 84, 106);
+  padding-left: 12px;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
+}
+.datepicker-sidebar-shortcut:hover {
+  background-color: rgb(228, 231, 241);
+}
+.datepicker-anim-enter-active {
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: datepicker-anim-in .2s cubic-bezier(.23, 1, .32, 1);
+          animation: datepicker-anim-in .2s cubic-bezier(.23, 1, .32, 1)
+}
+.datepicker-anim-leave-active {
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: datepicker-anim-out .2s cubic-bezier(.755, .05, .855, .06);
+          animation: datepicker-anim-out .2s cubic-bezier(.755, .05, .855, .06)
+}
+.calendar-left {
+  margin-left: 0 !important;
+}
+.datepicker-left {
+  width: 403px!important;
+}
+@-webkit-keyframes datepicker-anim-in {
+0% {
+    opacity: 0;
+    -webkit-transform: scaleY(.8);
+            transform: scaleY(.8)
+}
+to {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1)
+}
+}
+@keyframes datepicker-anim-in {
+0% {
+    opacity: 0;
+    -webkit-transform: scaleY(.8);
+            transform: scaleY(.8)
+}
+to {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1)
+}
+}
+@-webkit-keyframes datepicker-anim-out {
+0% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1)
+}
+to {
+    opacity: 0;
+    -webkit-transform: scaleY(.8);
+            transform: scaleY(.8)
+}
+}
+@keyframes datepicker-anim-out {
+0% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1)
+}
+to {
+    opacity: 0;
+    -webkit-transform: scaleY(.8);
+            transform: scaleY(.8)
+}
+}
+.el-date-editor .el-range-input {
+  border: none;
+  outline: none;
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  text-align: center;
+}
+.el-range-separator {
+  color: #606266;
+  font-size: 11px;
+}
+.datepicker-range .el-input__icon {
+  width: 20px;
+  text-align: left;
+  background: white;
+}
+.el-date-editor input::-ms-clear {
+  display:none !important;
+}
+</style><style type="text/css">
+.el-date-editor--daterange[data-v-e0277a90] {
+  overflow: hidden;
+}
+.el-range-input[data-v-e0277a90] {
+  width: 45%;
+  float: left;
+}
+.el-range-separator[data-v-e0277a90] {
+  width: 10%;
+  float: left;
+  text-align: center;
+  line-height: 22px;
+}
+.is_active[data-v-e0277a90] {
+  background-color: #1284e7;
+  color: #fff;
+}
+.is_active[data-v-e0277a90]:hover {
+  background: #1284e7!important;
+  color: #fff;
+}
+
+</style><style type="text/css">
+.calendar {
+  float: left;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 115px;
+}
+.calendar+.calendar{
+  border-left: solid 1px #eaeaea;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+.calendar-head {
+  line-height: 34px;
+  height: 34px;
+  text-align: center;
+  position: relative;
+}
+.calendar-head a {
+  color: rgb(31, 42, 61);
+  /*font-weight: bold;*/
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  padding: 0 5px;
+  font-size: 16px;
+}
+.calendar-head a:hover {
+  color: #1284e7;
+}
+.calendar-head .calendar-year-select,
+.calendar-head .calendar-month-select {
+  font-size: 12px;
+  padding: 0 2px;
+  position: relative;
+}
+.calendar-prev-decade-btn,
+.calendar-prev-year-btn {
+  left: 6px;
+}
+.calendar-prev-month-btn {
+  left: 24px;
+}
+.calendar-next-decade-btn,
+.calendar-next-year-btn {
+  right: 6px;
+}
+.calendar-next-month-btn {
+  right: 24px;
+}
+.calendar-body {
+  position: relative;
+  width: 196px;
+  height: 196px;
+}
+.calendar-days {
+  width: 100%;
+  height: 100%;
+}
+.calendar-week,
+.calendar-date {
+  font-weight: normal;
+  width: 14.28%;
+  height: 14.28%;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+}
+.calendar-week:before,
+.calendar-date:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.calendar-date {
+  cursor: pointer;
+}
+.calendar-date-out {
+  color: #ccc;
+}
+.calendar-date:hover,
+.calendar-date-on {
+  background: #eaf8fe;
+}
+.calendar-date-selected,
+.calendar-date-selected:hover {
+  color: #fff;
+  font-weight: bold;
+  background: #1284e7;
+}
+.calendar-date-disabled {
+  cursor: not-allowed !important;
+  color: #bcbcbc !important;
+  background: #f3f3f3 !important;
+}
+.calendar-foot {
+  margin-top: 5px;
+}
+.calendar-hour {
+  display: inline-block;
+  border: 1px solid #e6e5e5;
+  color: #9e9e9e;
+}
+.calendar-hour a {
+  display: inline-block;
+  padding: 2px 4px;
+  cursor: pointer;
+}
+.calendar-hour a:hover,
+.calendar-hour a.on {
+  color: #1284e7;
+}
+.calendar-years,
+.calendar-months,
+.calendar-hours,
+.calendar-minutes,
+.calendar-seconds {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  left: 0;
+  top: 0;
+}
+.calendar-months a {
+  width: 33.33%;
+  height: 25%;
+}
+.calendar-years a {
+  width: 33.33%;
+  height: 25%;
+}
+.calendar-hours a {
+  width: 20%;
+  height: 20%;
+}
+.calendar-minutes a,
+.calendar-seconds a {
+  width: 16.66%;
+  height: 10%;
+}
+.calendar-title {
+  margin-top: -30px;
+  height: 30px;
+  line-height: 30px;
+  background: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+</style><style type="text/css">
+.paging[data-v-5c87dde6] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 10px 0 20px;
+}
+.page_left[data-v-5c87dde6] {
+  float: left;
+}
+.page_btn[data-v-5c87dde6] {
+  line-height: 16px;
+}
+.page_btn i[data-v-5c87dde6] {
+  margin-right: 4px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.page_right[data-v-5c87dde6] {
+  float: right;
+}
+.filesContent[data-v-5c87dde6] {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+.filesBtn[data-v-5c87dde6] {
+  position: relative;
+  padding: 8px;
+}
+.filesInput[data-v-5c87dde6] {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+</style><style type="text/css">
+.form-item-line {
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  margin-bottom: 22px;
+}
+</style><style type="text/css">
+.dialogs-from .el-textarea.is-disabled .el-textarea__inner {
+  background-color: rgb(238, 240, 246)!important;
+  border-color: rgb(209, 217, 229)!important;
+  color: rgb(0, 0, 0)!important;
+  cursor: not-allowed;
+}
+.dialogs-from .is-disabled .el-input__inner {
+  background-color: rgb(238, 240, 246)!important;
+  border-color: rgb(209, 217, 229)!important;
+  color: rgb(0, 0, 0)!important;
+  cursor: not-allowed;
+}
+.dialogs-from .el-cascader.is-disabled .el-cascader__label {
+  background-color: rgb(238, 240, 246)!important;
+  border-color: rgb(209, 217, 229)!important;
+  color: rgb(0, 0, 0)!important;
+  cursor: not-allowed;
+}
+.dialogs-from .el-icon-circle-close:before {
+  color: #f1645b;
+}
+.dialogs-from .el-date-editor.el-input {
+  width: 299px;
+}
+.dialogs-from .el-checkbox + .el-checkbox {
+  margin-left: 0;
+  margin-right: 15px;
+}
+.dialogs-from .el-radio + .el-radio {
+  margin-left: 0;
+  margin-right: 15px;
+}
+.el-radio-group .el-radio {
+  margin-right: 15px;
+}
+.dialogs-from .el-checkbox {
+  margin-right: 15px;
+}
+.dialogs-from .el-select {
+  width: 299px;
+}
+.dialogs-from .el-form-item__content {
+  line-height: 36px;
+  position: relative;
+  font-size: 14px;
+  width: 300px;
+}
+.dialogs-from .el-dialog--small {
+  max-width: 520px;
+  min-width: 520px;
+}
+.dialogs-from .no-border .el-input__inner {
+  border: none;
+}
+.dialogs-from .iconfont {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.dialogs-from .file-list-preview .el-loading-spinner .el-loading-text {
+  margin-top: -23px !important;
+}
+</style><style type="text/css">
+.form-item-line {
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  margin-bottom: 22px;
+}
+</style><style type="text/css">
+.dialog-search[data-v-56a4f340] {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+.dialog-search-btn[data-v-56a4f340] {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  z-index: 2;
+  height: 36px;
+}
+.dialog-search-btn .el-button[data-v-56a4f340] {
+  padding: 0;
+  width: 36px;
+  height: 36px;
+}
+.dialog-search-btn i[data-v-56a4f340] {
+  font-size: 20px;
+}
+.dialog-search-box[data-v-56a4f340] {
+  position: relative;
+  z-index: 1;
+  padding-right: 60px;
+  padding-top: 15px;
+  overflow: hidden;
+}
+.dialog-footer[data-v-56a4f340] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.dialog-footer .iconfont[data-v-56a4f340] {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.dialog-page[data-v-56a4f340] {
+  height: 36px;
+  float: left;
+}
+.dialog-btn[data-v-56a4f340] {
+  float: right;
+  margin-right: 20px;
+}
+.btnclass[data-v-56a4f340] {
+  border-radius: 3px;
+  font-size: 12px;
+}
+</style><style type="text/css">
+.dialog-ct .el-dialog__header {
+  background-color: #f0f5f8;
+  padding: 20px;
+  color: #0868cf;
+  font-family: 'Microsoft YaHei';
+  border-bottom: 1px solid #ddd;
+}
+.dialog-ct .el-dialog__header .el-dialog__title {
+  color: #0868cf;
+  font-family: 'Microsoft YaHei';
+  font-weight: bold;
+}
+.dialog-ct .el-dialog__body {
+  padding: 15px 20px 0;
+  overflow: hidden;
+}
+.dialog-ct .el-dialog {
+  height: 70%;
+  overflow: hidden;
+}
+.el-dialog {
+  border-radius: 10px;
+}
+</style><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/3.07d524b578cabc50a034.js.下载"></script><style type="text/css">
+.tradeFooter[data-v-d1c0da96] {
+  text-align: center;
+  margin-top: .2rem;
+  /*position: absolute;*/
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+}
+.tradeButton[data-v-d1c0da96] {
+  margin: 0 auto;
+}
+.tradeFooter_left[data-v-d1c0da96] {
+  margin-left: -10px;
+}
+.el-button[data-v-d1c0da96] {
+  float: left;
+  padding: 8px;
+  margin-left: 10px;
+}
+.el-button i[data-v-d1c0da96] {
+  margin-right: 2px;
+}
+.tradeFooter .el-button[data-v-d1c0da96] {
+  float: none;
+}
+</style><style type="text/css">
+.markbg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 50%;
+}
+</style><style type="text/css">
+.from-red .el-input__inner {
+  color: red !important;
+}
+.from-blue .el-input__inner {
+  color: blue !important;
+}
+.from-green .el-input__inner {
+  color: #13ce66 !important;
+}
+.fromtrades {
+  overflow-y: auto;
+}
+.fromtrades .el-input,
+.fromtrades .el-cascader {
+  width: 100%;
+  min-width: 120px;
+  /*!*max-width: 180px;*!*/
+}
+.fromtrades .el-input.is-disabled .el-input__inner {
+  background-color: #fff;
+  color: #000;
+}
+.fromtrades .el-textarea.is-disabled .el-textarea__inner {
+  background-color: rgb(238, 240, 246) !important;
+  border-color: rgb(209, 217, 229) !important;
+  color: rgb(0, 0, 0) !important;
+  cursor: not-allowed;
+}
+.fromtrades .el-select .el-input.is-disabled .el-input__inner {
+  background-color: #fff;
+  color: #000;
+}
+.fromtrades .el-cascader .el-input.is-disabled .el-input__inner {
+  background-color: #fff;
+  color: #000;
+}
+.fromtrades .el-cascader.is-disabled .el-cascader__label {
+  color: #000;
+  background-color: #fff;
+}
+.fromtrades .el-date-editor .el-input.is-disabled .el-input__inner {
+  background-color: #fff;
+  color: #000;
+}
+.fromtrades .is-disabled .el-input__inner {
+  background-color: rgb(238, 240, 246) !important;
+  border-color: rgb(209, 217, 229) !important;
+  color: rgb(0, 0, 0);
+  cursor: not-allowed;
+}
+.fromtrades .el-cascader.is-disabled .el-cascader__label {
+  background-color: rgb(238, 240, 246) !important;
+  border-color: rgb(209, 217, 229) !important;
+  color: rgb(0, 0, 0) !important;
+  cursor: not-allowed;
+}
+.fromtrades .el-icon-circle-close:before {
+  color: #f1645b;
+}
+.from-button {
+  /*border-top: .01rem solid rgba(174, 194, 216, 0.96) !important;*/
+  padding: .1rem;
+  padding-left: .2rem;
+  background-color: white !important;
+  bottom: 20px;
+  margin-top: 0px;
+}
+.fromtrades .from-button .el-form-item__content {
+  margin-left: 0 !important;
+}
+.fromtrades .right .el-form-item__label {
+  text-align: right;
+}
+.fromtrades .left .el-form-item__label {
+  text-align: left;
+}
+.fromtrades .no-border .el-input__inner {
+  border: none;
+  font-size: 14px;
+  background-color: #fff !important;
+}
+.fromtrades .not-border .el-input__inner {
+  border: none;
+  font-size: 12px;
+  background-color: #fff !important;
+}
+.fromtrades .no-border .el-input__inner {
+  border: none;
+}
+.fromtrades .no-border .el-textarea__inner {
+  border: none;
+}
+.fromtrades .no-border .el-textarea__inner {
+  border: none;
+  font-size: 14px;
+  background-color: #fff !important;
+}
+.fromtrades .el-form-item {
+  margin-bottom: 5px;
+}
+.page_btn {
+  line-height: 16px;
+}
+.page_btn i {
+  margin-right: 4px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.fromtrades .open_more {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-top: none;
+  box-sizing: border-box;
+}
+.fromtrades .open_more_cont {
+  width: 60px;
+  height: 6px;
+  line-height: 6px;
+  background-color: #bbb;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -30px;
+  text-align: center;
+}
+.fromtrades .open_more_cont:hover {
+  background-color: #333;
+}
+.fromtrades .open_more i {
+  color: #234682;
+  display: block;
+  z-index: 2;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.fromtrades .purcha-style {
+  position: absolute;
+  margin-top: -34px;
+  right: 25%;
+  font-size: 16px;
+}
+.more_arrow_down {
+  background-image: url(/static/img/more_arrow_down.593eb42.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: block;
+  width: 8px;
+  height: 6px;
+  margin: 0 auto;
+  transition: all .4s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.more_arrow_down.up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.fromtrade-div {
+  height: inherit;
+  overflow-y: auto;
+  padding: 10px 0 5px 0;
+  border: 1px solid rgb(228, 232, 239);
+}
+.filesContent {
+  position: relative;
+  margin-left: 8px;
+  top: 1px;
+}
+.filesBtn {
+  position: relative;
+  padding: 7px 9px 8px 9px;
+}
+.input-red .el-input__inner {
+  color: red !important;
+}
+.filesInput {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+</style><style type="text/css">
+.delivery-log1 {
+  font-size: 14px;
+  color: #232121;
+  float: left;
+  margin-right: 50px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.delivery-log2 {
+  font-size: 14px;
+  color: #232121;
+  float: left;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+</style><style type="text/css">
+.space-steps .el-step__description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-top: -16px;
+}
+</style><style type="text/css">
+.delivery-log1 {
+  font-size: 14px;
+  color: #232121;
+  float: left;
+  margin-right: 50px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.delivery-log2 {
+  font-size: 14px;
+  color: #232121;
+  float: left;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+</style><style type="text/css">
+.delivery-table .el-dialog__wrapper {
+  overflow: unset
+}
+.delivery-table .el-dialog {
+  top: 10% !important;
+}
+.delivery-table .el-input.is-disabled .el-input__inner {
+  color: #000;
+}
+.del-table{
+  margin-top: -10px;
+  padding-top: 10px;
+  border: solid 1px #c1c1c1;
+}
+.del-table .table-button{
+  float: left;
+  margin-top: 16px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.del-table .from-table{
+  margin: -20px auto 0 auto;
+  width: 98%;
+}
+.dialog-from{
+  margin-top: 30px;
+}
+.dialog-from .fromtrade div{
+  /*overflow: hidden !important;*/
+  /*height: auto;*/
+}
+.trade-table .fromtrade-div {
+  height: inherit;
+  overflow-y: auto;
+  padding: 10px 0 5px 0;
+  border: none;
+}
+.delivery-table .el-upload-list li {
+  width: 180px !important;
+}
+.form-loadedit .el-pload-edit .file-list-preview {
+  margin-left: 140px !important;
+  margin-top: -53px !important;
+}
+.delivery-table .file-list-preview .el-loading-spinner .el-loading-text {
+  margin-top: -23px !important;
+}
+</style><style type="text/css">
+.notdelivery-table .file-list-preview .el-loading-spinner .el-loading-text {
+  margin-top: -23px !important;
+}
+</style><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/12.34bd302bda2a848514b0.js.下载"></script><style type="text/css">
+.print-type .el-radio-group {
+  margin: 0 0 10px 35px;
+}
+</style><style type="text/css">
+.file_tag[data-v-1e625b37] {
+  cursor: pointer;
+}
+#imageviewer[data-v-1e625b37] {
+  display: none;
+}
+</style><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/14.3ea0c6c809a423598ef6.js.下载"></script><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/13.286ad91a65f6082d5401.js.下载"></script><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/11.a23165ee8f2f0e69f07a.js.下载"></script><style type="text/css">
+.fromtrades .el-button+.el-button {
+  margin-left: 0px!important;
+}
+</style><style type="text/css">
+.colorRed {
+  color: red;
+}
+</style><style type="text/css">
+.wq_dialog .searchLabel {
+  width: 90px!important;
+}
+.wq_dialog .searchInput {
+  padding-left: 100px!important;
+}
+</style><style type="text/css">
+.wq_dialog .searchLabel {
+  width: 90px!important;
+}
+.wq_dialog .searchInput {
+  padding-left: 100px!important;
+}
+</style><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/8.7acf84946215c394cd35.js.下载"></script><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/2.a7f89c7845534134fcbc.js.下载"></script><style type="text/css">
+.text_right[data-v-fa4a3e4a] {
+  text-align: right;
+  width: 100%;
+}
+</style><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/10.e9d96b59bac2e9bcfddd.js.下载"></script><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/4.b789ad91972076ddf708.js.下载"></script><script type="text/javascript" charset="utf-8" async="" src="./交易平台_files/6.e7eb3af9f6744227ba9f.js.下载"></script><style type="text/css">
+.dialog-footer[data-v-94a2b9f2] {
+  text-align: center;
+}
+.dialog-footer .iconfont[data-v-94a2b9f2] {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.dialog-page[data-v-94a2b9f2] {
+  height: 36px;
+  float: left;
+}
+.dialog-btn[data-v-94a2b9f2] {
+  margin-right: 20px;
+}
+.btnclass[data-v-94a2b9f2] {
+  border-radius: 3px;
+  font-size: 12px;
+}
+.el-dialog__body[data-v-94a2b9f2] {
+  position: relative;
+}
+.el-dialog--large[data-v-94a2b9f2] {
+  width: 1200px !important;
+}
+</style><style type="text/css">
+.dialog-sign .el-dialog {
+  width: 1200px !important;
+}
+</style><style type="text/css">
+.trade {
+  position: relative !important;
+}
+.colorRed {
+  color: red;
+}
+</style><style type="text/css">
+.search-find[data-v-5c858fa8] {
+  padding-bottom: 15px;
+}
+.search-find .find[data-v-5c858fa8] {
+  margin-bottom: 0!important;
+}
+</style><style type="text/css">
+.edit-form[data-v-328de53a] {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.edit-form-title[data-v-328de53a] {
+  font-size: 20px;
+  padding: .1rem;
+  margin-bottom: .2rem;
+  border-bottom: .01rem solid #eee;
+}
+.dialog-footer[data-v-328de53a] {
+  text-align: center;
+}
+</style><style type="text/css">
+.el-dialog__body {
+  padding-top: 10px !important;
+}
+</style><style type="text/css">
+.trade {
+  position: relative !important;
+}
+.colorRed {
+  color: red;
+}
+.colorGreen {
+  color: green;
+}
+</style></head><body style=""><div id="app-gpo-index-hide" style="display: none;"><div id="app-header"><div class="app-header-left"><img class="app-header-left-logo" src="./交易平台_files/qywlogo.png" alt="交易平台"> <span class="app-header-left-span">交易平台</span></div></div><div id="app-body"></div><div id="app-body-line"></div><div id="spinner"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div></div><div class="app app-print"><div><div data-v-88564544=""><div data-v-88564544="" class=""><div data-v-efa003b8="" data-v-88564544=""><div data-v-efa003b8="" class="layout"><div data-v-6f686598="" data-v-efa003b8="" class="topnav"><p data-v-6f686598="" class="topnav__logo"><img data-v-6f686598="" src="./交易平台_files/qywlogo.png" alt=""> <span data-v-6f686598="">交易平台</span></p> <ul data-v-6f686598="" class="topnav-list"><li data-v-6f686598="" class="topnav-item"><a data-v-6f686598="" class="topnav-item-href"><i data-v-6f686598="" class="fa fa-cogs"></i> <p data-v-6f686598="">系统管理</p></a></li><li data-v-6f686598="" class="topnav-item"><a data-v-6f686598="" class="topnav-item-href"><i data-v-6f686598="" class="fa fa-cubes"></i> <p data-v-6f686598="">数据中心</p></a></li><li data-v-6f686598="" class="topnav-item"><a data-v-6f686598="" class="topnav-item-href"><i data-v-6f686598="" class="fa fa-user-circle"></i> <p data-v-6f686598="">会员系统</p></a></li><li data-v-6f686598="" class="topnav-item"><a data-v-6f686598="" class="topnav-item-href"><i data-v-6f686598="" class="fa fa-gavel"></i> <p data-v-6f686598="">采购平台</p></a></li><li data-v-6f686598="" class="topnav-item topnav-item--active"><a data-v-6f686598="" class="topnav-item-href"><i data-v-6f686598="" class="fa fa-balance-scale"></i> <p data-v-6f686598="">东莞交易</p></a></li><!----> <div data-v-6f686598="" class="topnav-item el-dropdown"><div data-v-6f686598="" class="el-dropdown-link"><i data-v-6f686598="" class="el-icon-caret-bottom el-icon--right"></i> <span data-v-6f686598="" class="el-dropdown-link-more-text">更多</span></div> <ul data-v-6f686598="" class="el-dropdown-menu" style="display: none;"><!----><!----><!----><!----><!----><li data-v-6f686598="" class="el-dropdown-menu__item topnav-item-dropdown-list"><a data-v-6f686598="" class="topnav-item-href"><i data-v-6f686598="" class="fa fa-balance-scale"></i> <b data-v-6f686598="">交易中心</b></a></li></ul></div></ul> <ul data-v-6f686598="" class="topnav-item-more"><li data-v-6f686598="" class="topnav-item-more-list"><div data-v-6f686598="" class="el-dropdown"><div data-v-6f686598="" class="el-dropdown-link-more"><span data-v-6f686598="" class="member-class el-tooltip max-screen"><span data-v-6f686598="" class="user-name">全药网GPO(qywgpo2018)</span> <span data-v-6f686598="" class="member-name">深圳市全药网药业有限公司(U000002)</span></span> <i data-v-6f686598="" class="icon fa fa-angle-down"></i></div> <ul data-v-6f686598="" class="el-dropdown-menu dropdown_info" style="display: none;"><li data-v-6f686598="" class="el-dropdown-menu__item min-screen"><span data-v-6f686598="" class="member-class-drop el-tooltip"><span data-v-6f686598="" class="user-name">全药网GPO(qywgpo2018)</span> <span data-v-6f686598="" class="member-name">深圳市全药网药业有限公司(U000002)</span></span></li> <li data-v-6f686598="" class="el-dropdown-menu__item dropdown_info_password"><div data-v-6f686598="">修改密码</div></li><li data-v-6f686598="" class="el-dropdown-menu__item dropdown_info_password"><div data-v-6f686598="">退出登录</div></li></ul></div></li></ul> <!----> <div data-v-6f686598="" class="message-list"><span data-v-6f686598=""></span> <button data-v-6f686598="" type="button" class="el-button message-list-btn el-button--text"><!----><!----><span><div data-v-6f686598="" class="el-badge messageIcon"><i data-v-6f686598="" class="message-list-btn-icon fa fa-envelope"></i><sup class="el-badge__content is-fixed" style="display: none;">0</sup></div> <span data-v-6f686598="" class="icon-line-style">|</span></span></button></div></div> <div data-v-efa003b8="" class="layout-content"><div data-v-74f15ce7="" data-v-efa003b8="" class="leftnav"><div data-v-74f15ce7="" class="leftnav_one"><ul data-v-74f15ce7="" class="el-menu"><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-menu-item el-submenu-index" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-home"></i> <span data-v-74f15ce7="">主页</span></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-cogs"></i> <span data-v-74f15ce7="">基础信息</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;" data-old-padding-top="" data-old-padding-bottom="" data-old-overflow=""> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">集采项目表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">地址管理</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">医疗机构</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">经营企业</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">生产企业</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">合同有效期设置</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">点配送时间设置</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">公告管理</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-cube"></i> <span data-v-74f15ce7="">药品管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;" data-old-padding-top="" data-old-padding-bottom="" data-old-overflow=""> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">药品上架管理</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">药品编码对照</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">药品卫监码对照</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">药检报告列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">药品批号管理</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-users"></i> <span data-v-74f15ce7="">配送关系管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;"> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">卖方选配送</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">卖方补充配送</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">配送企业确认</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">买方选配送</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">买方更换配送</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">可采药品目录</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">协议价维护</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-window-restore"></i> <span data-v-74f15ce7="">医疗机构报量管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;"> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">报量期间设置</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">医疗机构报量</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">报量汇总</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-sticky-note"></i> <span data-v-74f15ce7="">合同管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;" data-old-padding-top="" data-old-padding-bottom="" data-old-overflow=""> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">三方合同列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">廉洁合同列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">合同结案申请单</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">合同明细</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">合同药品统计</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu is-active is-opened"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-tags"></i> <span data-v-74f15ce7="">订单管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="" data-old-padding-top="" data-old-padding-bottom="" data-old-overflow=""> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item is-active" style="padding-left: 40px;">采购计划</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">订单购物车</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">订单列表（医疗机构）</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">订单列表（配送企业）</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">订单结案申请单</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">订单结案申请明细</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">订单明细</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-clipboard"></i> <span data-v-74f15ce7="">配送单管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;" data-old-padding-top="" data-old-padding-bottom="" data-old-overflow=""> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">配送单列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">配送单明细</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-folder-open-o"></i> <span data-v-74f15ce7="">入库单管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;" data-old-padding-top="" data-old-padding-bottom="" data-old-overflow=""> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">入库单列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">入库单明细</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-share"></i> <span data-v-74f15ce7="">退货管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;" data-old-padding-top="" data-old-padding-bottom="" data-old-overflow=""> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">退货单列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">退货单明细</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-map-o"></i> <span data-v-74f15ce7="">发票管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;" data-old-padding-top="" data-old-padding-bottom="" data-old-overflow=""> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">发票列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">发票明细</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">发票汇总</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-indent"></i> <span data-v-74f15ce7="">配送企业采购管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;" data-old-padding-top="" data-old-padding-bottom="" data-old-overflow=""> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">采购单列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">采购单明细</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-dropbox"></i> <span data-v-74f15ce7="">GPO采购管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;"> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">GPO采购单列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">GPO采购单明细</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">GPO入库单列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">GPO入库单明细</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">卖方发票列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">卖方发票明细</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-ambulance"></i> <span data-v-74f15ce7="">GPO出库管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;" data-old-padding-top="" data-old-padding-bottom="" data-old-overflow=""> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">出库单列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">出库单明细</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">GPO发票列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">GPO发票明细</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-archive"></i> <span data-v-74f15ce7="">配送企业库存管理</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;"> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">库存列表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">库存明细列表</li></ul></li></ul></li></span><span data-v-74f15ce7=""><li data-v-74f15ce7="" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i data-v-74f15ce7="" class="fa fa-line-chart"></i> <span data-v-74f15ce7="">通用报表</span><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul class="el-menu" style="display: none;" data-old-padding-top="" data-old-padding-bottom="" data-old-overflow=""> <li data-v-74f15ce7="" class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 30px;"></div><ul><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">医院品规报表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">月度销售报表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">月度汇总报表</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">构成分析</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">医院采购分析</li><li data-v-74f15ce7="" class="el-menu-item" style="padding-left: 40px;">配送企业库存分析</li></ul></li></ul></li></span></ul> <div data-v-74f15ce7="" class="open_nav"><div data-v-74f15ce7="" class="open_nav_cont"><i data-v-74f15ce7=""></i></div></div></div></div> <div data-v-efa003b8="" class="layout-content-body"><div data-v-88564544="" data-v-efa003b8=""><div data-v-88564544="" class="el-breadcrumb layout-content-body-breadcrumb" data-v-efa003b8=""><span data-v-88564544="" class="el-breadcrumb__item"><span class="el-breadcrumb__item__inner"><button data-v-88564544="" type="button" class="el-button el-button--text">交易系统</button></span><span class="el-breadcrumb__separator">&gt;</span></span><span data-v-88564544="" class="el-breadcrumb__item"><span class="el-breadcrumb__item__inner"><button data-v-88564544="" type="button" class="el-button el-button--text is-disabled" disabled="disabled">订单管理</button></span><span class="el-breadcrumb__separator">&gt;</span></span><span data-v-88564544="" class="el-breadcrumb__item"><span class="el-breadcrumb__item__inner"><button data-v-88564544="" type="button" class="el-button el-button--text is-disabled" disabled="disabled">采购计划</button></span><span class="el-breadcrumb__separator">&gt;</span></span></div></div> <div data-v-88564544="" data-v-efa003b8=""><div data-v-88564544="" data-v-efa003b8="" class="content-right-main"><div data-v-88564544="" class="el-select global-select" data-v-efa003b8=""><!----><div class="el-input el-input--small"><!----><i class="el-input__icon el-icon-caret-top"></i><input autocomplete="off" placeholder="请选择GPO" size="small" readonly="readonly" icon="caret-top" type="text" rows="2" class="el-input__inner"><!----><!----></div><div class="el-select-dropdown" style="display: none; min-width: 200px;"><div class="el-scrollbar" style=""><div class="el-select-dropdown__wrap el-scrollbar__wrap" style="margin-bottom: -17px; margin-right: -17px;"><ul class="el-scrollbar__view el-select-dropdown__list" style="position: relative;"><!----><li data-v-88564544="" class="el-select-dropdown__item selected"><span>深圳市全药网药业有限公司</span></li><div class="resize-triggers"><div class="expand-trigger"><div style="width: 1px; height: 1px;"></div></div><div class="contract-trigger"></div></div></ul></div><div class="el-scrollbar__bar is-horizontal"><div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical"><div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div></div></div><!----></div><div class="resize-triggers"><div class="expand-trigger"><div style="width: 201px; height: 31px;"></div></div><div class="contract-trigger"></div></div></div></div></div>  <div data-v-88564544=""><div id="Order_Plan"><div data-v-71b46613="" class="find"><div data-v-71b46613="" class="content"><div data-v-71b46613="" class="btnS"><!----> <button data-v-71b46613="" type="button" class="el-button searchBtn el-tooltip el-button--small" style="display: none;"><!----><!----><span><i data-v-71b46613="" class="fa fa-trash-o"></i></span></button> <button data-v-71b46613="" type="button" class="el-button searchBtn el-tooltip el-button--primary el-button--small"><!----><!----><span><i data-v-71b46613="" class="fa fa-search"></i></span></button></div> <div data-v-71b46613="" class="searchContentBox"><div data-v-71b46613="" class="el-row"><div data-v-71b46613="" style=""><div data-v-71b46613="" class="el-col el-col-12 el-col-lg-6"><div data-v-71b46613="" class="searchct"><div data-v-71b46613="" class="searchLabel">采购计划编号</div> <div data-v-71b46613="" class="searchInput"><!----> <span data-v-71b46613="" class=""><div data-v-71b46613="" class="el-input el-input--small"><!----><!----><input autocomplete="off" placeholder="请输入编号" size="small" icon="" type="text" rows="2" validateevent="true" class="el-input__inner"><!----><!----></div></span> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----></div></div></div></div><div data-v-71b46613="" style=""><div data-v-71b46613="" class="el-col el-col-12 el-col-lg-6"><div data-v-71b46613="" class="searchct"><div data-v-71b46613="" class="searchLabel">采购计划名称</div> <div data-v-71b46613="" class="searchInput"><!----> <span data-v-71b46613="" class=""><div data-v-71b46613="" class="el-input el-input--small"><!----><!----><input autocomplete="off" placeholder="请输入名称" size="small" icon="" type="text" rows="2" validateevent="true" class="el-input__inner"><!----><!----></div></span> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----></div></div></div></div><div data-v-71b46613="" style=""><div data-v-71b46613="" class="el-col el-col-12 el-col-lg-6"><div data-v-71b46613="" class="searchct"><div data-v-71b46613="" class="searchLabel">创建日期</div> <div data-v-71b46613="" class="searchInput"><!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <span data-v-71b46613="" style="height: 30px; display: block;"><div data-v-71b46613="" data-v-24b9b528="" class="el-input el-input--small"><div data-v-e0277a90="" data-v-71b46613="" class="datepicker-range datepicker__clearable"><div data-v-e0277a90="" class="el-date-editor el-range-editor el-input__inner el-date-editor--daterange"><input data-v-e0277a90="" placeholder="开始日期" name="" class="el-range-input el-input__inner"> <span data-v-e0277a90="" class="el-range-separator">至</span> <input data-v-e0277a90="" placeholder="结束日期" name="" class="el-range-input el-input__inner"> <i data-v-e0277a90="" class="el-input__icon el-range__icon el-icon-date"></i></div> <div data-v-e0277a90="" tabindex="-1" class="datepicker-popup " style="display: none;"><div data-v-e0277a90="" class="datepicker-sidebar"><button data-v-e0277a90="" type="button" class="datepicker-sidebar-shortcut">最近一周</button> <button data-v-e0277a90="" type="button" class="datepicker-sidebar-shortcut is_active">最近一个月</button> <button data-v-e0277a90="" type="button" class="datepicker-sidebar-shortcut">最近三个月</button> <button data-v-e0277a90="" type="button" class="datepicker-sidebar-shortcut">最近半年</button> <button data-v-e0277a90="" type="button" class="datepicker-sidebar-shortcut">最近一年</button></div> <div data-v-e0277a90=""><div data-v-e0277a90="" class="calendar"><div class="calendar-head"><a class="calendar-prev-decade-btn" style="display: none;"><i class="fa fa-angle-double-left"></i></a> <a class="calendar-prev-year-btn"><i class="fa fa-angle-double-left"></i></a> <a class="calendar-prev-month-btn"><i class="fa fa-angle-left"></i></a> <a class="calendar-year-select" style="display: none;">2010-2020</a> <a class="calendar-year-select">2017年</a> <a class="calendar-month-select">12月</a> <a class="calendar-next-month-btn"><i class="fa fa-angle-right"></i></a> <a class="calendar-next-year-btn"><i class="fa fa-angle-double-right"></i></a> <a class="calendar-next-decade-btn" style="display: none;"><i class="fa fa-angle-double-right"></i></a></div> <div class="calendar-body"><div class="calendar-days"><a class="calendar-week">一</a><a class="calendar-week">二</a><a class="calendar-week">三</a><a class="calendar-week">四</a><a class="calendar-week">五</a><a class="calendar-week">六</a><a class="calendar-week">日</a> <a class="calendar-date-out calendar-date">27</a><a class="calendar-date-out calendar-date">28</a><a class="calendar-date-out calendar-date">29</a><a class="calendar-date-out calendar-date">30</a><a class="calendar-date">1</a><a class="calendar-date">2</a><a class="calendar-date">3</a><a class="calendar-date">4</a><a class="calendar-date">5</a><a class="calendar-date">6</a><a class="calendar-date">7</a><a class="calendar-date">8</a><a class="calendar-date">9</a><a class="calendar-date">10</a><a class="calendar-date">11</a><a class="calendar-date">12</a><a class="calendar-date">13</a><a class="calendar-date">14</a><a class="calendar-date">15</a><a class="calendar-date">16</a><a class="calendar-date">17</a><a class="calendar-date">18</a><a class="calendar-date">19</a><a class="calendar-date">20</a><a class="calendar-date">21</a><a class="calendar-date">22</a><a class="calendar-date">23</a><a class="calendar-date">24</a><a class="calendar-date">25</a><a class="calendar-date">26</a><a class="calendar-date">27</a><a class="calendar-date">28</a><a class="calendar-date">29</a><a class="calendar-date calendar-date-selected">30</a><a class="calendar-date calendar-date-on">31</a><a class="calendar-date-out calendar-date calendar-date-on">1</a><a class="calendar-date-out calendar-date calendar-date-on">2</a><a class="calendar-date-out calendar-date calendar-date-on">3</a><a class="calendar-date-out calendar-date calendar-date-on">4</a><a class="calendar-date-out calendar-date calendar-date-on">5</a><a class="calendar-date-out calendar-date calendar-date-on">6</a><a class="calendar-date-out calendar-date calendar-date-on">7</a></div> <div class="calendar-months" style="display: none;"><a class="calendar-date">一月</a><a class="calendar-date">二月</a><a class="calendar-date">三月</a><a class="calendar-date">四月</a><a class="calendar-date">五月</a><a class="calendar-date">六月</a><a class="calendar-date">七月</a><a class="calendar-date">八月</a><a class="calendar-date">九月</a><a class="calendar-date">十月</a><a class="calendar-date">十一月</a><a class="calendar-date calendar-date-selected">十二月</a></div> <div class="calendar-years" style="display: none;"><a class="calendar-date-out calendar-date">2009</a><a class="calendar-date">2010</a><a class="calendar-date">2011</a><a class="calendar-date">2012</a><a class="calendar-date">2013</a><a class="calendar-date">2014</a><a class="calendar-date">2015</a><a class="calendar-date">2016</a><a class="calendar-date calendar-date-selected">2017</a><a class="calendar-date calendar-date-disabled calendar-date-on">2018</a><a class="calendar-date calendar-date-disabled calendar-date-on">2019</a><a class="calendar-date-out calendar-date calendar-date-disabled calendar-date-on">2020</a></div> <div class="calendar-hours" style="display: none;"><div class="calendar-title">选择小时</div> <a class="calendar-date">0</a><a class="calendar-date">1</a><a class="calendar-date">2</a><a class="calendar-date">3</a><a class="calendar-date">4</a><a class="calendar-date">5</a><a class="calendar-date">6</a><a class="calendar-date">7</a><a class="calendar-date">8</a><a class="calendar-date">9</a><a class="calendar-date">10</a><a class="calendar-date">11</a><a class="calendar-date">12</a><a class="calendar-date">13</a><a class="calendar-date">14</a><a class="calendar-date">15</a><a class="calendar-date calendar-date-selected">16</a><a class="calendar-date calendar-date-on">17</a><a class="calendar-date calendar-date-on">18</a><a class="calendar-date calendar-date-on">19</a><a class="calendar-date calendar-date-on">20</a><a class="calendar-date calendar-date-on">21</a><a class="calendar-date calendar-date-on">22</a><a class="calendar-date calendar-date-on">23</a></div> <div class="calendar-minutes" style="display: none;"><div class="calendar-title">选择分钟</div> <a class="calendar-date">0</a><a class="calendar-date">1</a><a class="calendar-date">2</a><a class="calendar-date">3</a><a class="calendar-date calendar-date-selected">4</a><a class="calendar-date calendar-date-on">5</a><a class="calendar-date calendar-date-on">6</a><a class="calendar-date calendar-date-on">7</a><a class="calendar-date calendar-date-on">8</a><a class="calendar-date calendar-date-on">9</a><a class="calendar-date calendar-date-on">10</a><a class="calendar-date calendar-date-on">11</a><a class="calendar-date calendar-date-on">12</a><a class="calendar-date calendar-date-on">13</a><a class="calendar-date calendar-date-on">14</a><a class="calendar-date calendar-date-on">15</a><a class="calendar-date calendar-date-on">16</a><a class="calendar-date calendar-date-on">17</a><a class="calendar-date calendar-date-on">18</a><a class="calendar-date calendar-date-on">19</a><a class="calendar-date calendar-date-on">20</a><a class="calendar-date calendar-date-on">21</a><a class="calendar-date calendar-date-on">22</a><a class="calendar-date calendar-date-on">23</a><a class="calendar-date calendar-date-on">24</a><a class="calendar-date calendar-date-on">25</a><a class="calendar-date calendar-date-on">26</a><a class="calendar-date calendar-date-on">27</a><a class="calendar-date calendar-date-on">28</a><a class="calendar-date calendar-date-on">29</a><a class="calendar-date calendar-date-on">30</a><a class="calendar-date calendar-date-on">31</a><a class="calendar-date calendar-date-on">32</a><a class="calendar-date calendar-date-on">33</a><a class="calendar-date calendar-date-on">34</a><a class="calendar-date calendar-date-on">35</a><a class="calendar-date calendar-date-on">36</a><a class="calendar-date calendar-date-on">37</a><a class="calendar-date calendar-date-on">38</a><a class="calendar-date calendar-date-on">39</a><a class="calendar-date calendar-date-on">40</a><a class="calendar-date calendar-date-on">41</a><a class="calendar-date calendar-date-on">42</a><a class="calendar-date calendar-date-on">43</a><a class="calendar-date calendar-date-on">44</a><a class="calendar-date calendar-date-on">45</a><a class="calendar-date calendar-date-on">46</a><a class="calendar-date calendar-date-on">47</a><a class="calendar-date calendar-date-on">48</a><a class="calendar-date calendar-date-on">49</a><a class="calendar-date calendar-date-on">50</a><a class="calendar-date calendar-date-on">51</a><a class="calendar-date calendar-date-on">52</a><a class="calendar-date calendar-date-on">53</a><a class="calendar-date calendar-date-on">54</a><a class="calendar-date calendar-date-on">55</a><a class="calendar-date calendar-date-on">56</a><a class="calendar-date calendar-date-on">57</a><a class="calendar-date calendar-date-on">58</a><a class="calendar-date calendar-date-on">59</a></div> <div class="calendar-seconds" style="display: none;"><div class="calendar-title">选择秒数</div> <a class="calendar-date">0</a><a class="calendar-date">1</a><a class="calendar-date">2</a><a class="calendar-date">3</a><a class="calendar-date">4</a><a class="calendar-date">5</a><a class="calendar-date">6</a><a class="calendar-date">7</a><a class="calendar-date">8</a><a class="calendar-date">9</a><a class="calendar-date">10</a><a class="calendar-date">11</a><a class="calendar-date">12</a><a class="calendar-date">13</a><a class="calendar-date">14</a><a class="calendar-date">15</a><a class="calendar-date">16</a><a class="calendar-date">17</a><a class="calendar-date">18</a><a class="calendar-date">19</a><a class="calendar-date">20</a><a class="calendar-date">21</a><a class="calendar-date">22</a><a class="calendar-date">23</a><a class="calendar-date">24</a><a class="calendar-date">25</a><a class="calendar-date">26</a><a class="calendar-date">27</a><a class="calendar-date">28</a><a class="calendar-date">29</a><a class="calendar-date">30</a><a class="calendar-date">31</a><a class="calendar-date calendar-date-selected">32</a><a class="calendar-date calendar-date-on">33</a><a class="calendar-date calendar-date-on">34</a><a class="calendar-date calendar-date-on">35</a><a class="calendar-date calendar-date-on">36</a><a class="calendar-date calendar-date-on">37</a><a class="calendar-date calendar-date-on">38</a><a class="calendar-date calendar-date-on">39</a><a class="calendar-date calendar-date-on">40</a><a class="calendar-date calendar-date-on">41</a><a class="calendar-date calendar-date-on">42</a><a class="calendar-date calendar-date-on">43</a><a class="calendar-date calendar-date-on">44</a><a class="calendar-date calendar-date-on">45</a><a class="calendar-date calendar-date-on">46</a><a class="calendar-date calendar-date-on">47</a><a class="calendar-date calendar-date-on">48</a><a class="calendar-date calendar-date-on">49</a><a class="calendar-date calendar-date-on">50</a><a class="calendar-date calendar-date-on">51</a><a class="calendar-date calendar-date-on">52</a><a class="calendar-date calendar-date-on">53</a><a class="calendar-date calendar-date-on">54</a><a class="calendar-date calendar-date-on">55</a><a class="calendar-date calendar-date-on">56</a><a class="calendar-date calendar-date-on">57</a><a class="calendar-date calendar-date-on">58</a><a class="calendar-date calendar-date-on">59</a></div></div> <!----></div> <div data-v-e0277a90="" class="calendar"><div class="calendar-head"><a class="calendar-prev-decade-btn" style="display: none;"><i class="fa fa-angle-double-left"></i></a> <a class="calendar-prev-year-btn"><i class="fa fa-angle-double-left"></i></a> <a class="calendar-prev-month-btn"><i class="fa fa-angle-left"></i></a> <a class="calendar-year-select" style="display: none;">2010-2020</a> <a class="calendar-year-select">2018年</a> <a class="calendar-month-select">1月</a> <a class="calendar-next-month-btn"><i class="fa fa-angle-right"></i></a> <a class="calendar-next-year-btn"><i class="fa fa-angle-double-right"></i></a> <a class="calendar-next-decade-btn" style="display: none;"><i class="fa fa-angle-double-right"></i></a></div> <div class="calendar-body"><div class="calendar-days"><a class="calendar-week">一</a><a class="calendar-week">二</a><a class="calendar-week">三</a><a class="calendar-week">四</a><a class="calendar-week">五</a><a class="calendar-week">六</a><a class="calendar-week">日</a> <a class="calendar-date-out calendar-date calendar-date-disabled calendar-date-on">25</a><a class="calendar-date-out calendar-date calendar-date-disabled calendar-date-on">26</a><a class="calendar-date-out calendar-date calendar-date-disabled calendar-date-on">27</a><a class="calendar-date-out calendar-date calendar-date-disabled calendar-date-on">28</a><a class="calendar-date-out calendar-date calendar-date-disabled calendar-date-on">29</a><a class="calendar-date-out calendar-date calendar-date-on">30</a><a class="calendar-date-out calendar-date calendar-date-on">31</a><a class="calendar-date calendar-date-on">1</a><a class="calendar-date calendar-date-on">2</a><a class="calendar-date calendar-date-on">3</a><a class="calendar-date calendar-date-on">4</a><a class="calendar-date calendar-date-on">5</a><a class="calendar-date calendar-date-on">6</a><a class="calendar-date calendar-date-on">7</a><a class="calendar-date calendar-date-on">8</a><a class="calendar-date calendar-date-on">9</a><a class="calendar-date calendar-date-on">10</a><a class="calendar-date calendar-date-on">11</a><a class="calendar-date calendar-date-on">12</a><a class="calendar-date calendar-date-on">13</a><a class="calendar-date calendar-date-on">14</a><a class="calendar-date calendar-date-on">15</a><a class="calendar-date calendar-date-on">16</a><a class="calendar-date calendar-date-on">17</a><a class="calendar-date calendar-date-on">18</a><a class="calendar-date calendar-date-on">19</a><a class="calendar-date calendar-date-on">20</a><a class="calendar-date calendar-date-on">21</a><a class="calendar-date calendar-date-on">22</a><a class="calendar-date calendar-date-on">23</a><a class="calendar-date calendar-date-on">24</a><a class="calendar-date calendar-date-on">25</a><a class="calendar-date calendar-date-on">26</a><a class="calendar-date calendar-date-on">27</a><a class="calendar-date calendar-date-on">28</a><a class="calendar-date calendar-date-selected">29</a><a class="calendar-date">30</a><a class="calendar-date">31</a><a class="calendar-date-out calendar-date">1</a><a class="calendar-date-out calendar-date">2</a><a class="calendar-date-out calendar-date">3</a><a class="calendar-date-out calendar-date">4</a></div> <div class="calendar-months" style="display: none;"><a class="calendar-date calendar-date-selected">一月</a><a class="calendar-date">二月</a><a class="calendar-date">三月</a><a class="calendar-date">四月</a><a class="calendar-date">五月</a><a class="calendar-date">六月</a><a class="calendar-date">七月</a><a class="calendar-date">八月</a><a class="calendar-date">九月</a><a class="calendar-date">十月</a><a class="calendar-date">十一月</a><a class="calendar-date">十二月</a></div> <div class="calendar-years" style="display: none;"><a class="calendar-date-out calendar-date calendar-date-disabled calendar-date-on">2009</a><a class="calendar-date calendar-date-disabled calendar-date-on">2010</a><a class="calendar-date calendar-date-disabled calendar-date-on">2011</a><a class="calendar-date calendar-date-disabled calendar-date-on">2012</a><a class="calendar-date calendar-date-disabled calendar-date-on">2013</a><a class="calendar-date calendar-date-disabled calendar-date-on">2014</a><a class="calendar-date calendar-date-disabled calendar-date-on">2015</a><a class="calendar-date calendar-date-disabled calendar-date-on">2016</a><a class="calendar-date calendar-date-disabled calendar-date-on">2017</a><a class="calendar-date calendar-date-selected">2018</a><a class="calendar-date">2019</a><a class="calendar-date-out calendar-date">2020</a></div> <div class="calendar-hours" style="display: none;"><div class="calendar-title">选择小时</div> <a class="calendar-date calendar-date-on">0</a><a class="calendar-date calendar-date-on">1</a><a class="calendar-date calendar-date-on">2</a><a class="calendar-date calendar-date-on">3</a><a class="calendar-date calendar-date-on">4</a><a class="calendar-date calendar-date-on">5</a><a class="calendar-date calendar-date-on">6</a><a class="calendar-date calendar-date-on">7</a><a class="calendar-date calendar-date-on">8</a><a class="calendar-date calendar-date-on">9</a><a class="calendar-date calendar-date-on">10</a><a class="calendar-date calendar-date-on">11</a><a class="calendar-date calendar-date-on">12</a><a class="calendar-date calendar-date-on">13</a><a class="calendar-date calendar-date-on">14</a><a class="calendar-date calendar-date-on">15</a><a class="calendar-date calendar-date-selected">16</a><a class="calendar-date">17</a><a class="calendar-date">18</a><a class="calendar-date">19</a><a class="calendar-date">20</a><a class="calendar-date">21</a><a class="calendar-date">22</a><a class="calendar-date">23</a></div> <div class="calendar-minutes" style="display: none;"><div class="calendar-title">选择分钟</div> <a class="calendar-date calendar-date-on">0</a><a class="calendar-date calendar-date-on">1</a><a class="calendar-date calendar-date-on">2</a><a class="calendar-date calendar-date-on">3</a><a class="calendar-date calendar-date-selected">4</a><a class="calendar-date">5</a><a class="calendar-date">6</a><a class="calendar-date">7</a><a class="calendar-date">8</a><a class="calendar-date">9</a><a class="calendar-date">10</a><a class="calendar-date">11</a><a class="calendar-date">12</a><a class="calendar-date">13</a><a class="calendar-date">14</a><a class="calendar-date">15</a><a class="calendar-date">16</a><a class="calendar-date">17</a><a class="calendar-date">18</a><a class="calendar-date">19</a><a class="calendar-date">20</a><a class="calendar-date">21</a><a class="calendar-date">22</a><a class="calendar-date">23</a><a class="calendar-date">24</a><a class="calendar-date">25</a><a class="calendar-date">26</a><a class="calendar-date">27</a><a class="calendar-date">28</a><a class="calendar-date">29</a><a class="calendar-date">30</a><a class="calendar-date">31</a><a class="calendar-date">32</a><a class="calendar-date">33</a><a class="calendar-date">34</a><a class="calendar-date">35</a><a class="calendar-date">36</a><a class="calendar-date">37</a><a class="calendar-date">38</a><a class="calendar-date">39</a><a class="calendar-date">40</a><a class="calendar-date">41</a><a class="calendar-date">42</a><a class="calendar-date">43</a><a class="calendar-date">44</a><a class="calendar-date">45</a><a class="calendar-date">46</a><a class="calendar-date">47</a><a class="calendar-date">48</a><a class="calendar-date">49</a><a class="calendar-date">50</a><a class="calendar-date">51</a><a class="calendar-date">52</a><a class="calendar-date">53</a><a class="calendar-date">54</a><a class="calendar-date">55</a><a class="calendar-date">56</a><a class="calendar-date">57</a><a class="calendar-date">58</a><a class="calendar-date">59</a></div> <div class="calendar-seconds" style="display: none;"><div class="calendar-title">选择秒数</div> <a class="calendar-date calendar-date-on">0</a><a class="calendar-date calendar-date-on">1</a><a class="calendar-date calendar-date-on">2</a><a class="calendar-date calendar-date-on">3</a><a class="calendar-date calendar-date-on">4</a><a class="calendar-date calendar-date-on">5</a><a class="calendar-date calendar-date-on">6</a><a class="calendar-date calendar-date-on">7</a><a class="calendar-date calendar-date-on">8</a><a class="calendar-date calendar-date-on">9</a><a class="calendar-date calendar-date-on">10</a><a class="calendar-date calendar-date-on">11</a><a class="calendar-date calendar-date-on">12</a><a class="calendar-date calendar-date-on">13</a><a class="calendar-date calendar-date-on">14</a><a class="calendar-date calendar-date-on">15</a><a class="calendar-date calendar-date-on">16</a><a class="calendar-date calendar-date-on">17</a><a class="calendar-date calendar-date-on">18</a><a class="calendar-date calendar-date-on">19</a><a class="calendar-date calendar-date-on">20</a><a class="calendar-date calendar-date-on">21</a><a class="calendar-date calendar-date-on">22</a><a class="calendar-date calendar-date-on">23</a><a class="calendar-date calendar-date-on">24</a><a class="calendar-date calendar-date-on">25</a><a class="calendar-date calendar-date-on">26</a><a class="calendar-date calendar-date-on">27</a><a class="calendar-date calendar-date-on">28</a><a class="calendar-date calendar-date-on">29</a><a class="calendar-date calendar-date-on">30</a><a class="calendar-date calendar-date-on">31</a><a class="calendar-date calendar-date-selected">32</a><a class="calendar-date">33</a><a class="calendar-date">34</a><a class="calendar-date">35</a><a class="calendar-date">36</a><a class="calendar-date">37</a><a class="calendar-date">38</a><a class="calendar-date">39</a><a class="calendar-date">40</a><a class="calendar-date">41</a><a class="calendar-date">42</a><a class="calendar-date">43</a><a class="calendar-date">44</a><a class="calendar-date">45</a><a class="calendar-date">46</a><a class="calendar-date">47</a><a class="calendar-date">48</a><a class="calendar-date">49</a><a class="calendar-date">50</a><a class="calendar-date">51</a><a class="calendar-date">52</a><a class="calendar-date">53</a><a class="calendar-date">54</a><a class="calendar-date">55</a><a class="calendar-date">56</a><a class="calendar-date">57</a><a class="calendar-date">58</a><a class="calendar-date">59</a></div></div> <!----></div></div></div></div></div></span></div></div></div></div><div data-v-71b46613="" style=""><div data-v-71b46613="" class="el-col el-col-12 el-col-lg-6"><div data-v-71b46613="" class="searchct"><div data-v-71b46613="" class="searchLabel">医疗机构</div> <div data-v-71b46613="" class="searchInput"><!----> <span data-v-71b46613="" class=""><div data-v-71b46613="" class="el-input el-input--small"><!----><!----><input autocomplete="off" placeholder="请输入医疗机构" size="small" icon="" type="text" rows="2" validateevent="true" class="el-input__inner"><!----><!----></div></span> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----></div></div></div></div></div></div></div> <div data-v-71b46613="" class="open_more" style="display: none;"><div data-v-71b46613="" class="open_more_cont"><i data-v-71b46613="" class="more_arrow_down"></i></div></div></div> <div style="position: static;"><div class="el-table el-table--fit el-table--striped el-table--border el-table--enable-row-transition" style="height: 519px;"><div class="hidden-columns"><div></div> <div height="20px"></div> <div height="20px"></div> <div height="20px"></div> <div height="20px"></div> <div height="20px"></div> <div max-width="200"></div></div><div class="el-table__header-wrapper"><table cellspacing="0" cellpadding="0" border="0" class="el-table__header" style="width: 1255px;"><colgroup><col name="el-table_1_column_37" width="40"><col name="el-table_1_column_38" width="237"><col name="el-table_1_column_39" width="233"><col name="el-table_1_column_40" width="116"><col name="el-table_1_column_41" width="204"><col name="el-table_1_column_42" width="262"><col name="el-table_1_column_43" width="146"><col name="gutter" width="17"></colgroup><thead><tr><th colspan="1" rowspan="1" class="el-table_1_column_37 is-leaf"><div class="cell">#</div></th><th colspan="1" rowspan="1" class="el-table_1_column_38 is-leaf"><div class="cell">采购计划编号<span class="caret-wrapper"><i class="sort-caret ascending"></i><i class="sort-caret descending"></i></span></div></th><th colspan="1" rowspan="1" class="el-table_1_column_39 is-leaf"><div class="cell">采购计划名称<span class="caret-wrapper"><i class="sort-caret ascending"></i><i class="sort-caret descending"></i></span></div></th><th colspan="1" rowspan="1" class="el-table_1_column_40 is-leaf"><div class="cell">创建人<span class="caret-wrapper"><i class="sort-caret ascending"></i><i class="sort-caret descending"></i></span></div></th><th colspan="1" rowspan="1" class="el-table_1_column_41 is-leaf"><div class="cell">创建日期<span class="caret-wrapper"><i class="sort-caret ascending"></i><i class="sort-caret descending"></i></span></div></th><th colspan="1" rowspan="1" class="el-table_1_column_42 table_right is-leaf"><div class="cell">医疗机构<span class="caret-wrapper"><i class="sort-caret ascending"></i><i class="sort-caret descending"></i></span></div></th><th colspan="1" rowspan="1" class="el-table_1_column_43 is-center is-hidden is-leaf"><div class="cell">操作</div></th><th class="gutter" style="width: 17px;"></th></tr></thead></table></div><div class="el-table__body-wrapper" style="height: 488px;"><table cellspacing="0" cellpadding="0" border="0" class="el-table__body" style="width: 1238px;"><colgroup><col name="el-table_1_column_37" width="40"><col name="el-table_1_column_38" width="237"><col name="el-table_1_column_39" width="233"><col name="el-table_1_column_40" width="116"><col name="el-table_1_column_41" width="204"><col name="el-table_1_column_42" width="262"><col name="el-table_1_column_43" width="146"></colgroup><tbody><tr class="el-table__row"><td class="el-table_1_column_37"><div class="cell">1</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18012200004</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">123</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-22 14:56:15</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=80" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37"><div class="cell">2</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18012200002</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">3月</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-22 11:17:36</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=78" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row"><td class="el-table_1_column_37"><div class="cell">3</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18011900001</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">2月计划</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-19 16:13:50</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=76" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37"><div class="cell">4</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18011700001</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">每月计划</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-17 16:59:15</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=75" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row"><td class="el-table_1_column_37"><div class="cell">5</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18011300089</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">888</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-13 17:06:14</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=74" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37"><div class="cell">6</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18011300088</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">+666</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-13 15:47:18</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=73" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row"><td class="el-table_1_column_37"><div class="cell">7</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18011300086</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">856</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-13 14:07:36</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=71" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37"><div class="cell">8</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18011300083</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">测试用1</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-13 13:17:31</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=68" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row hover-row"><td class="el-table_1_column_37"><div class="cell">9</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18010900080</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">03</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">廖程</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-09 17:16:59</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;"></div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=66" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37"><div class="cell">10</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18010800079</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">月计划</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-08 11:14:24</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=65" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row"><td class="el-table_1_column_37"><div class="cell">11</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18010800078</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">周计划</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-08 11:14:06</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=64" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37"><div class="cell">12</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18010500073</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">DASGASGDG</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞虎门</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 17:17:07</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市虎门医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=61" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row"><td class="el-table_1_column_37"><div class="cell">13</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18010500072</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">ADGASDGA</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞虎门</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 17:16:52</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市虎门医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=60" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37"><div class="cell">14</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18010500071</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">DAGAGDA</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞虎门</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 17:16:32</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市虎门医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=59" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row"><td class="el-table_1_column_37"><div class="cell">15</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18010500070</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">gdahdah</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞虎门</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 17:07:33</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市虎门医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=58" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37"><div class="cell">16</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18010500069</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">867666</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞虎门</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 17:02:17</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市虎门医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=57" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row"><td class="el-table_1_column_37"><div class="cell">17</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18010500068</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">测试采购计划2</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞五人民</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 17:00:18</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市第五人民医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=56" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37"><div class="cell">18</div></td><td class="el-table_1_column_38"><div class="cell el-tooltip" style="width: 237px;">J18010500066</div></td><td class="el-table_1_column_39"><div class="cell el-tooltip" style="width: 233px;">测试采购计划1</div></td><td class="el-table_1_column_40"><div class="cell el-tooltip" style="width: 116px;">东莞五人民</div></td><td class="el-table_1_column_41"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 16:58:56</span></div></td><td class="el-table_1_column_42 table_right"><div class="cell el-tooltip" style="width: 262px;">东莞市第五人民医院</div></td><td class="el-table_1_column_43 is-center is-hidden"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=54" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td><td class="gutter"></td></tr><!----></tbody></table><!----></div><!----><!----><div class="el-table__fixed-right" style="width: 146px; right: 17px; height: 518px;"><div class="el-table__fixed-header-wrapper"><table cellspacing="0" cellpadding="0" border="0" class="el-table__header" style="width: 146px;"><colgroup><col name="el-table_1_column_37" width="40"><col name="el-table_1_column_38" width="237"><col name="el-table_1_column_39" width="233"><col name="el-table_1_column_40" width="116"><col name="el-table_1_column_41" width="204"><col name="el-table_1_column_42" width="262"><col name="el-table_1_column_43" width="146"></colgroup><thead><tr><th colspan="1" rowspan="1" class="el-table_1_column_37 is-hidden is-leaf"><div class="cell">#</div></th><th colspan="1" rowspan="1" class="el-table_1_column_38 is-hidden is-leaf"><div class="cell">采购计划编号<span class="caret-wrapper"><i class="sort-caret ascending"></i><i class="sort-caret descending"></i></span></div></th><th colspan="1" rowspan="1" class="el-table_1_column_39 is-hidden is-leaf"><div class="cell">采购计划名称<span class="caret-wrapper"><i class="sort-caret ascending"></i><i class="sort-caret descending"></i></span></div></th><th colspan="1" rowspan="1" class="el-table_1_column_40 is-hidden is-leaf"><div class="cell">创建人<span class="caret-wrapper"><i class="sort-caret ascending"></i><i class="sort-caret descending"></i></span></div></th><th colspan="1" rowspan="1" class="el-table_1_column_41 is-hidden is-leaf"><div class="cell">创建日期<span class="caret-wrapper"><i class="sort-caret ascending"></i><i class="sort-caret descending"></i></span></div></th><th colspan="1" rowspan="1" class="el-table_1_column_42 table_right is-hidden is-leaf"><div class="cell">医疗机构<span class="caret-wrapper"><i class="sort-caret ascending"></i><i class="sort-caret descending"></i></span></div></th><th colspan="1" rowspan="1" class="el-table_1_column_43 is-center is-leaf"><div class="cell">操作</div></th></tr></thead></table></div><div class="el-table__fixed-body-wrapper" style="top: 30px; height: 488px;"><table cellspacing="0" cellpadding="0" border="0" class="el-table__body" style="width: 146px;"><colgroup><col name="el-table_1_column_37" width="40"><col name="el-table_1_column_38" width="237"><col name="el-table_1_column_39" width="233"><col name="el-table_1_column_40" width="116"><col name="el-table_1_column_41" width="204"><col name="el-table_1_column_42" width="262"><col name="el-table_1_column_43" width="146"></colgroup><tbody><tr class="el-table__row"><td class="el-table_1_column_37 is-hidden"><div class="cell">1</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18012200004</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">123</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-22 14:56:15</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=80" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37 is-hidden"><div class="cell">2</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18012200002</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">3月</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-22 11:17:36</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=78" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row"><td class="el-table_1_column_37 is-hidden"><div class="cell">3</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18011900001</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">2月计划</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-19 16:13:50</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=76" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37 is-hidden"><div class="cell">4</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18011700001</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">每月计划</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-17 16:59:15</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=75" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row"><td class="el-table_1_column_37 is-hidden"><div class="cell">5</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18011300089</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">888</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-13 17:06:14</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=74" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37 is-hidden"><div class="cell">6</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18011300088</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">+666</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-13 15:47:18</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=73" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row"><td class="el-table_1_column_37 is-hidden"><div class="cell">7</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18011300086</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">856</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-13 14:07:36</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=71" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37 is-hidden"><div class="cell">8</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18011300083</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">测试用1</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-13 13:17:31</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=68" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row hover-row"><td class="el-table_1_column_37 is-hidden"><div class="cell">9</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18010900080</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">03</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">廖程</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-09 17:16:59</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;"></div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=66" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37 is-hidden"><div class="cell">10</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18010800079</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">月计划</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-08 11:14:24</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=65" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row"><td class="el-table_1_column_37 is-hidden"><div class="cell">11</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18010800078</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">周计划</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞长安</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-08 11:14:06</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市长安医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=64" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37 is-hidden"><div class="cell">12</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18010500073</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">DASGASGDG</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞虎门</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 17:17:07</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市虎门医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=61" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row"><td class="el-table_1_column_37 is-hidden"><div class="cell">13</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18010500072</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">ADGASDGA</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞虎门</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 17:16:52</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市虎门医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=60" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37 is-hidden"><div class="cell">14</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18010500071</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">DAGAGDA</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞虎门</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 17:16:32</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市虎门医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=59" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row"><td class="el-table_1_column_37 is-hidden"><div class="cell">15</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18010500070</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">gdahdah</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞虎门</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 17:07:33</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市虎门医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=58" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37 is-hidden"><div class="cell">16</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18010500069</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">867666</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞虎门</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 17:02:17</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市虎门医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=57" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row"><td class="el-table_1_column_37 is-hidden"><div class="cell">17</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18010500068</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">测试采购计划2</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞五人民</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 17:00:18</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市第五人民医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=56" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><tr class="el-table__row el-table__row--striped"><td class="el-table_1_column_37 is-hidden"><div class="cell">18</div></td><td class="el-table_1_column_38 is-hidden"><div class="cell el-tooltip" style="width: 237px;">J18010500066</div></td><td class="el-table_1_column_39 is-hidden"><div class="cell el-tooltip" style="width: 233px;">测试采购计划1</div></td><td class="el-table_1_column_40 is-hidden"><div class="cell el-tooltip" style="width: 116px;">东莞五人民</div></td><td class="el-table_1_column_41 is-hidden"><div class="cell el-tooltip" style="width: 204px;"><span>2018-01-05 16:58:56</span></div></td><td class="el-table_1_column_42 table_right is-hidden"><div class="cell el-tooltip" style="width: 262px;">东莞市第五人民医院</div></td><td class="el-table_1_column_43 is-center"><div class="cell"><a href="http://trade.test.opengpo.com/#/Order/PurchasePlan/CheckItem?id=54" class=""><button type="button" class="el-button el-button--text el-button--small"><!----><!----><span><i class="icon iconfont icon-chakan" style="font-size: 12px;"></i>详情
+          </span></button></a></div></td></tr><!----></tbody></table></div><!----></div><div class="el-table__fixed-right-patch" style="width: 17px; height: 30px;"></div><div class="el-table__column-resize-proxy" style="display: none;"></div><div class="resize-triggers"><div class="expand-trigger"><div style="width: 1256px; height: 519px;"></div></div><div class="contract-trigger"></div></div></div><div class="el-loading-mask" style="display: none;"><div class="el-loading-spinner"><svg viewBox="25 25 50 50" class="circular"><circle cx="50" cy="50" r="20" fill="none" class="path"></circle></svg><!----></div></div></div> <div data-v-5c87dde6="" class="paging"><div data-v-5c87dde6="" class="page_left"><!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----></div> <div data-v-5c87dde6="" class="page_right el-pagination"><span class="el-pagination__total">共 18 条</span><span class="el-pagination__sizes"><div class="el-select"><!----><div class="el-input"><!----><i class="el-input__icon el-icon-caret-top"></i><input autocomplete="off" placeholder="请选择" readonly="readonly" icon="caret-top" type="text" rows="2" class="el-input__inner"><!----><!----></div><div class="el-select-dropdown" style="display: none; min-width: 110px;"><div class="el-scrollbar" style=""><div class="el-select-dropdown__wrap el-scrollbar__wrap" style="margin-bottom: -17px; margin-right: -17px;"><ul class="el-scrollbar__view el-select-dropdown__list" style="position: relative;"><!----><li class="el-select-dropdown__item selected"><span>20 条/页</span></li><li class="el-select-dropdown__item"><span>50 条/页</span></li><li class="el-select-dropdown__item"><span>100 条/页</span></li><li class="el-select-dropdown__item"><span>200 条/页</span></li><div class="resize-triggers"><div class="expand-trigger"><div style="width: 1px; height: 1px;"></div></div><div class="contract-trigger"></div></div></ul></div><div class="el-scrollbar__bar is-horizontal"><div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical"><div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div></div></div><!----></div><div class="resize-triggers"><div class="expand-trigger"><div style="width: 111px; height: 30px;"></div></div><div class="contract-trigger"></div></div></div></span><button type="button" class="btn-prev disabled"><i class="el-icon el-icon-arrow-left"></i></button><ul class="el-pager"><li class="number active">1</li><!----><!----><!----></ul><button type="button" class="btn-next disabled"><i class="el-icon el-icon-arrow-right"></i></button><span class="el-pagination__jump">前往<input type="number" min="1" max="1" value="1" number="true" class="el-pagination__editor">页</span></div></div></div> <div style="display: none;"><!----> <div data-v-d1c0da96="" class="tradeFooter"><div data-v-d1c0da96="" class="tradeButton"><button data-v-d1c0da96="" type="button" class="el-button page_btn el-button--primary el-button--small" name="save" style=""><!----><!----><span><i data-v-d1c0da96="" class="icon iconfont icon-baocun"></i>保存
+    </span></button> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <button data-v-d1c0da96="" type="button" class="el-button page_btn el-button--warning el-button--small" name="Print" style="display: none;"><!----><!----><span><i data-v-d1c0da96="" class="fa  fa-file-image-o"></i>打印发票
+    </span></button> <!----> <!----> <!----> <!----> <button data-v-d1c0da96="" type="button" class="el-button page_btn el-button--danger el-button--small" name="Delete"><!----><!----><span><i data-v-d1c0da96="" class="icon iconfont icon-delete"></i>删除
+    </span></button> <!----> <!----> <!----> <!----> <!----> <!----> <button data-v-d1c0da96="" type="button" class="el-button page_btn el-button--default el-button--small" name="Back"><!----><!----><span><i data-v-d1c0da96="" class="icon iconfont icon-fanhui"></i>返回
+    </span></button></div> <div data-v-d1c0da96="" style="height: 0.25rem;"></div></div></div></div> </div></div></div></div></div> <div data-v-88564544=""><div class="el-dialog__wrapper" style="display: none;"><div class="el-dialog el-dialog--tiny" style="top: 15%;"><div class="el-dialog__header"><span class="el-dialog__title">修改密码</span><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div><!----><div class="el-dialog__footer"><span><button type="button" class="el-button el-button--primary"><!----><!----><span>保存</span></button> <button type="button" class="el-button el-button--default"><!----><!----><span>取消</span></button></span></div></div></div></div></div></div></div><script>//  不让开右键
+    // document.oncontextmenu = function (evt) {
+    //   evt.preventDefault();
+    // }
+
+    //  不让选择
+    // document.onselectstart = function (evt) {
+    //   evt.preventDefault();
+    // };</script><script type="text/javascript" src="./交易平台_files/manifest.005b9c92ed07d745ca82.js.下载"></script><script type="text/javascript" src="./交易平台_files/vendor.99f98b89804efefa493b.js.下载"></script><script type="text/javascript" src="./交易平台_files/app.6225886331fa4922b7f4.js.下载"></script><div class="el-popover" style="width: 400px; transform-origin: center top 0px; z-index: 2006; display: none;"><!----><div data-v-6f686598=""><div data-v-6f686598="" class="message-title"><span data-v-6f686598="" class="message-title-left">未读新消息</span> <span data-v-6f686598="" class="message-title-right">查看全部&gt;&gt;</span></div> <div data-v-6f686598="" class="message-no">暂无新消息...</div></div><div x-arrow="" class="popper__arrow" style="left: 203.5px;"></div></div><div class="el-tooltip__popper is-dark" style="transform-origin: right center 0px; z-index: 2008; display: none;">全药网GPO(qywgpo2018)
+深圳市全药网药业有限公司(U000002)<div x-arrow="" class="popper__arrow" style="top: 9px;"></div></div><div class="el-tooltip__popper is-dark" style="transform-origin: center bottom 0px; z-index: 2009; display: none;">搜索<div x-arrow="" class="popper__arrow" style="left: 16px;"></div></div></body></html>
