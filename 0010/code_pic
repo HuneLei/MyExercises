@@ -1,0 +1,45 @@
+# -*- coding: utf-8 -*-
+import string, random
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+
+
+class produce_pic:
+    def __init__(self):
+        self.code = ''
+        self.font = ''
+        self.pic = ''
+
+    @staticmethod  # 静态方法定义,可以被类和类实例调用
+    def get_pic_color():
+        return tuple(random.randint(50, 100) for _ in range(3))
+
+    def get_new_pic(self, width=240, height=60):
+        self.pic = Image.new('RGB', (width, height), (200, 200, 200))
+
+    def get_ran_code(self, num=4):
+        self.code = [random.choice(string.letters) for i in range(num)]
+
+    def get_code_font(self, font='simsun.ttc', size=50):
+        self.font = ImageFont.truetype(font, size)
+
+    def get_duct_pic(self):
+        draw = ImageDraw.Draw(self.pic)
+        for n, m in enumerate(self.code):
+            draw.text((self.pic.size[0] / 4 * n, random.randrange(0, 20)),
+                      m, font=self.font, fill=produce_pic().get_pic_color())
+        for i in xrange(5000):
+            draw.point((random.randint(0, self.pic.size[0]),
+                        random.randint(0, self.pic.size[1])), fill=produce_pic().get_pic_color())
+        self.pic = self.pic.filter(ImageFilter.BLUR)
+
+    def save_pic(self, path='produce_pic.png'):
+        self.pic.save(path, 'png')
+
+
+if __name__ == '__main__':
+    produce = produce_pic()
+    produce.get_new_pic()
+    produce.get_ran_code()
+    produce.get_code_font()
+    produce.get_duct_pic()
+    produce.save_pic()

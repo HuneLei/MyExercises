@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+# 统计单词数量
 import re
 
 
